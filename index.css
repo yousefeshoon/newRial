@@ -142,8 +142,17 @@ h1 {
 }
 
 .share-section {
-    text-align: left;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.version {
+    font-family: 'Vazirmatn', sans-serif;
+    color: var(--secondary-text-color);
+    font-size: 0.9rem;
+    padding-top: 8px;
+    white-space: nowrap;
 }
 
 .share-button {

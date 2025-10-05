@@ -211,7 +211,7 @@ const App = () => {
         return (
             <>
                 <div className="input-group">
-                    <label htmlFor="rialInput">مبلغ به ریال جدید</label>
+                    <label htmlFor="rialInput">مبلغ به ریال جدید (مقدار قران را با ممیز وارد کنید)</label>
                     <input
                         type="text"
                         id="rialInput"
@@ -271,10 +271,13 @@ const App = () => {
                 
             </div>
             <div className="share-section">
-                <button className="share-button" onClick={handleShare}>
-                    معرفی برنامه به دیگران
-                </button>
-                {copyStatus && <p className="copy-status" aria-live="polite">{copyStatus}</p>}
+                <div>
+                    <button className="share-button" onClick={handleShare}>
+                        معرفی برنامه به دیگران
+                    </button>
+                    {copyStatus && <p className="copy-status" aria-live="polite">{copyStatus}</p>}
+                </div>
+                <span className="version">نسخه 1.21</span>
             </div>
         </>
     );
